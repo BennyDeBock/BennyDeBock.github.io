@@ -1,3 +1,34 @@
 .current { color: green; }
 
+/* ------------------------------------------------------- */
+/* ----------------- REUSABLE COMPONENTS ----------------- */
+/* ------------------------------------------------------- */
+* { margin: 0; box-sizing: border-box; text-transform: uppercase; }
+
+body { display: grid; height: 100vh; grid-template-columns: 0.2fr 0.2fr 1fr 1fr 1fr; grid-template-rows: 2fr 1fr 0.3fr; grid-template-areas: "nav sidebar main main main" "nav sidebar content1 content2 content3" "nav sidebar footer footer footer"; grid-gap: 1rem; }
+
+/* ----- Lists ----- */
+ul { list-style: none; }
+
+/* ------------------------------------------------------- */
+/* ----------------- HEADER ----------------- */
+/* ------------------------------------------------------- */
+header { background: deepskyblue; }
+
+nav { grid-area: nav; height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly; }
+
+nav a { padding: 20px; }
+
+#sidebar { background: peachpuff; grid-area: sidebar; }
+
+main { background: greenyellow; grid-area: main; }
+
+#content1 { background: khaki; grid-area: content1; }
+
+#content2 { background: mediumaquamarine; grid-area: content2; }
+
+#content3 { background: orange; grid-area: content3; }
+
+footer { background: hotpink; grid-area: footer; }
+
 /*# sourceMappingURL=styles.css.map */
