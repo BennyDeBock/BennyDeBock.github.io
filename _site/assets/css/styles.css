@@ -1,39 +1,51 @@
-.current { color: green; }
+/* ------------------------------------------------------- */
+/* --------------------- BASIC SETUP --------------------- */
+/* ------------------------------------------------------- */
+:root { font-size: 1em; font-family: 'Open Sans', sans-serif; }
+
+* { margin: 0; box-sizing: border-box; text-transform: uppercase; }
+
+body { height: 100vh; background-color: #2E3133; color: #FFFFFF; }
+
+body::-webkit-scrollbar { width: 0.50rem; }
+
+body::-webkit-scrollbar-track { background: #202224; }
+
+body::-webkit-scrollbar-thumb { background: #CC9F47; }
 
 /* ------------------------------------------------------- */
 /* ----------------- REUSABLE COMPONENTS ----------------- */
 /* ------------------------------------------------------- */
-* { margin: 0; box-sizing: border-box; text-transform: uppercase; }
+main { margin-left: 5rem; padding: 1rem; }
 
-body { display: grid; height: 100vh; grid-template-columns: 0.2fr 0.2fr 1fr 1fr 1fr; grid-template-rows: 2fr 1fr 0.3fr; grid-template-areas: "nav sidebar main main main" "nav sidebar content1 content2 content3" "nav sidebar footer footer footer"; grid-gap: 1rem; background-color: #2E3133; }
+footer { margin-left: 5rem; padding: 1rem; }
 
 /* ----- Lists ----- */
-ul { list-style: none; }
-
 /* ----- Links ----- */
-a:link, a:visited { color: #FFFFFF; text-decoration: none; display: inline-block; width: 100%; height: 20%; padding: 20px; margin: auto 0; }
+/* ------------------------------------------------------- */
+/* ------------------------ HEADER ----------------------- */
+/* ------------------------------------------------------- */
+.navbar { width: 5rem; height: 100vh; position: fixed; transition: width 200ms ease; -webkit-transition: width 200ms ease; -moz-transition: width 200ms ease; -ms-transition: width 200ms ease; -o-transition: width 200ms ease; }
 
-a:hover, a:active { color: #9932CC; }
+.navbar:hover { width: 16rem; background-color: #202224; }
+
+.navbar:hover .link-text { display: block; }
+
+.navbar-nav { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; height: 100%; }
+
+.nav-item { width: 100%; }
+
+.nav-link { display: flex; align-items: center; height: 5rem; color: #FFFFFF; text-decoration: none; }
+
+.link-text { display: none; margin-left: 1rem; }
+
+.nav-link svg { min-width: 2rem; width: 2rem; margin: 0 1.5rem; }
+
+.ionicon { color: #9932CC; }
 
 /* ------------------------------------------------------- */
-/* ----------------- HEADER ----------------- */
+/* ----------------- HOME PAGE ----------------- */
 /* ------------------------------------------------------- */
-header { border-right: 2px solid #202224; }
-
-nav { grid-area: nav; height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; }
-
-nav a:hover, nav a:active { background-color: #202224; }
-
-#sidebar { background: peachpuff; grid-area: sidebar; }
-
-main { background: greenyellow; grid-area: main; }
-
-#content1 { background: khaki; grid-area: content1; }
-
-#content2 { background: mediumaquamarine; grid-area: content2; }
-
-#content3 { background: orange; grid-area: content3; }
-
-footer { background: hotpink; grid-area: footer; }
+.intro-picture { width: 200px; height: auto; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
