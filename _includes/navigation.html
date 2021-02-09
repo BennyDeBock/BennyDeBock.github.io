@@ -1,4 +1,5 @@
 <nav>
+    <!--House, <> code snippet, Pen/pencil, Document, Envelope-->
     {% for item in site.data.navigation %}
     
         <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
