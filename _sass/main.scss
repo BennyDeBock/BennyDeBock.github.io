@@ -7,7 +7,9 @@ $primary-text: #FFFFFF;
 $secondary-text: #BFBFBF;
 $divider-colour: #A1ACB3;
 $background-colour: #2E3133;
+$background-menu: #1e2021;
 $background-colour-dark: #202224;
+$transition-speed: 600ms;
 
 /* ------------------------------------------------------- */
 /* --------------------- BASIC SETUP --------------------- */
@@ -99,11 +101,16 @@ footer{
 
 .navbar:hover{
     width: 16rem;
-    background-color: $background-colour-dark;
+    background-color: $background-menu;
 }
 
 .navbar:hover .link-text{
-    display: block;
+    display: inline;
+    transition: opacity $transition-speed;
+    -webkit-transition: opacity $transition-speed;
+    -moz-transition: opacity $transition-speed;
+    -ms-transition: opacity $transition-speed;
+    -o-transition: opacity $transition-speed;
 }
 
 .navbar-nav{
@@ -127,6 +134,14 @@ footer{
     height: 5rem;
     color: $primary-text;
     text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    -webkit-filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    -webkit-filter: grayscale(0%) opacity(1);
+    background: $background-colour-dark;
 }
 
 .link-text{
@@ -142,6 +157,11 @@ footer{
 
 .ionicon{
     color: $primary-colour;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
 }
 // header{
 //     border-right: 2px solid $background-colour-dark;
