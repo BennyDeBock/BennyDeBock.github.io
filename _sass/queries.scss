@@ -43,7 +43,7 @@ $transition-speed: 600ms;
 }
 
 /*Big phones to small tablets*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .submit-btn {
         width:100%;
         float: none;
@@ -51,13 +51,13 @@ $transition-speed: 600ms;
     }
 }
 
-input[type=checkbox] + label {
-  color: #ccc;
-  font-style: italic;
-} 
-
-input[type=checkbox]:checked + label {
-  color: #f00;
-  font-style: normal;
+@media screen and (min-width: 1921px){
+    .row{
+        transform: scale(1.15,1.15);
+        -webkit-transform: scale(1.15,1.15);
+        -moz-transform: scale(1.15,1.15);
+        -ms-transform: scale(1.15,1.15);
+        -o-transform: scale(1.15,1.15);
+    }
 }
 
