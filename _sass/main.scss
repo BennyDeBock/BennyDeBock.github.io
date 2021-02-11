@@ -27,15 +27,7 @@ $transition-speed: 600ms;
 }
 
 body{
-    // display: grid;
     height: 100vh;
-    // grid-template-columns: 0.2fr 0.2fr 1fr 1fr 1fr;
-    // grid-template-rows: 2fr 1fr 0.3fr;
-    // grid-template-areas: 
-    // "nav sidebar main main main"
-    // "nav sidebar main main main"
-    // "nav sidebar footer footer footer";
-    // grid-gap: 1rem;
     background-color: $background-colour;
     color: $primary-text;
 }
@@ -59,31 +51,6 @@ main{
     margin-left: 5rem;
     padding: 1rem;
 }
-
-footer{
-    margin-left: 5rem;
-    padding: 1rem;
-}
-/* ----- Lists ----- */
-// ul{
-//     list-style: none;
-// }
-
-/* ----- Links ----- */
-// a:link,
-// a:visited{
-//     color: $primary-text;
-//     text-decoration: none;
-//     display: inline-block;
-//     width: 100%;
-//     padding: 20px;
-//     height: 20%;
-// }
-
-// a:hover,
-// a:active{
-//     color: $primary-colour;
-// }
 
 /* ------------------------------------------------------- */
 /* ------------------------ HEADER ----------------------- */
@@ -138,6 +105,11 @@ footer{
     -webkit-filter: grayscale(100%) opacity(0.7);
 }
 
+.current{
+    filter: grayscale(20%) opacity(0.7);
+    -webkit-filter: grayscale(20%) opacity(0.7);
+}
+
 .nav-link:hover{
     filter: grayscale(0%) opacity(1);
     -webkit-filter: grayscale(0%) opacity(1);
@@ -151,7 +123,7 @@ footer{
 
 .nav-link svg{
     min-width: 2rem;
-    width: 2rem;
+    max-width: 2rem;
     margin: 0 1.5rem;
 }
 
@@ -163,74 +135,6 @@ footer{
     -ms-transition: 600ms;
     -o-transition: 600ms;
 }
-// header{
-//     border-right: 2px solid $background-colour-dark;
-//     // grid-area: nav;
-//     width: 100px;
-//     position: fixed;
-// }
-// nav{
-//     display:flex;
-//     flex-direction: column;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     height: 100vh;
-
-//     .current{
-//         color: $light-primary-colour;
-//     }
-
-//     .current:active,
-//     .current:hover{
-//         color: $primary-colour;
-//     }
-//     a{
-//         .nav-icon{
-//             filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(293deg) brightness(102%) contrast(101%);
-//             transition: filter 0.2s;
-//             -webkit-transition: filter 0.2s;
-//             -moz-transition: filter 0.2s;
-//             -ms-transition: filter 0.2s;
-//             -o-transition: filter 0.2s;
-//         }
-
-//         .nav-container{
-//             position: absolute;
-//             top: 50%;
-//             left: 50%;
-//             transform: translateX(-50%) translateY(-50%);
-//             -webkit-transform: translateX(-50%) translateY(-50%);
-//             -moz-transform: translateX(-50%) translateY(-50%);
-//             -ms-transform: translateX(-50%) translateY(-50%);
-//             -o-transform: translateX(-50%) translateY(-50%);
-//             width: 100%;
-//         }
-//         position: relative;
-//     }
-
-//     a:hover,
-//     a:active{
-//         background-color: $background-colour-dark;
-//         .nav-icon{
-//             filter: invert(31%) sepia(90%) saturate(3953%) hue-rotate(268deg) brightness(82%) contrast(93%);
-//         }
-//     }
-
-    
-
-    
-// }
-
-// #sidebar{
-//     background: peachpuff;
-//     grid-area: sidebar;
-// }
-
-// main{
-//     background: greenyellow;
-//     margin-left: 200px;
-//     // grid-area: main;
-// }
 
 /* ------------------------------------------------------- */
 /* ----------------- HOME PAGE ----------------- */
@@ -245,23 +149,22 @@ footer{
     -o-border-radius: 50%;
 }
 
-// #content1{
-//     background: khaki;
-//     grid-area: content1;
-// }
 
-// #content2{
-//     background: mediumaquamarine;
-//     grid-area: content2;
-// }
-
-// #content3{
-//     background: orange;
-//     grid-area: content3;
-// }
-
-// footer{
-//     background: hotpink;
-//     margin-left: 200px;
-//     // grid-area: footer;
-// }
+/* ------------------------------------------------------- */
+/* ------------------------ FOOTER ----------------------- */
+/* ------------------------------------------------------- */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding: 1rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.footer-text{
+    margin: 0 auto;
+    text-align: center;
+}

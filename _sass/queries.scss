@@ -18,6 +18,8 @@ $transition-speed: 600ms;
         bottom: 0;
         width: 100vw;
         height: 5rem;
+        background-color: $background-menu;
+        z-index: 9999;
     }
 
     .navbar-nav{
@@ -28,7 +30,12 @@ $transition-speed: 600ms;
         justify-content: center;
         filter: grayscale(0%) opacity(1);
         -webkit-filter: grayscale(0%) opacity(1);
-}
+    }
+    .nav-link svg{
+        min-width: 1.5rem;
+        max-width: 1.7rem;
+        margin: 0 1.5rem;
+    }
 
     main{
         margin: 0;
