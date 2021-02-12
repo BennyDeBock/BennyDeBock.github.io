@@ -315,7 +315,7 @@ hr{
 }
 
 /* ------------------------------------------------------- */
-/* ----------------- HOME PAGE ----------------- */
+/* ---------------------- HOME PAGE ---------------------- */
 /* ------------------------------------------------------- */
 .intro-picture{
     margin-left: 5%;
@@ -326,6 +326,80 @@ hr{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+/* ------------------------------------------------------- */
+/* ----------------------- PROJECTS ---------------------- */
+/* ------------------------------------------------------- */
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr .7fr .7fr;
+    row-gap: 15px;
+    column-gap: 50px;
+    height: 100%;
+    width: 100%;
+    grid-auto-flow: dense;
+    padding: 0 50px 0 50px;
+}
+
+.project-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: 35px;
+}
+
+.project{
+    width: 100%;
+    min-height: 325px;
+    height: 325px;
+    overflow: hidden;
+    background-color: $background-colour-dark;
+    display: flex;
+}
+
+.project img{
+    width: auto;
+    height: 100%;
+}
+
+.project a{
+    text-decoration: none;
+    color: $primary-text;
+    position: absolute;
+    bottom: 15px;
+}
+
+.project a:hover{
+    color: $accent-colour;
+}
+
+.project h3{
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.project p{
+    color: $secondary-text;
+    word-spacing: 2px;
+    line-height: 125%;
+}
+
+.long-copy{
+    font-size: 90%;
+    line-height: 150%;
+    word-spacing: 2px;
+    width: 90%;
+}
+
+.project div{
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 10px;
+    text-align: start;
 }
 
 
