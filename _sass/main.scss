@@ -353,7 +353,6 @@ hr{
 
 .project{
     width: 100%;
-    min-height: 325px;
     height: 325px;
     overflow: hidden;
     background-color: $background-colour-dark;
@@ -425,6 +424,86 @@ hr{
     color: $primary-colour;
 }
 
+/* ------------------------------------------------------- */
+/* -------------------------- CV ------------------------- */
+/* ------------------------------------------------------- */
+/* ----- BASICS ----- */
+.cv-title{
+    margin-bottom: 15px;
+    font-size: 130%;
+    text-align: left;
+}
+
+.cv-subtitle{
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+/* ----- SKILLS ----- */
+.cv-techs{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+
+    img{
+        width: 30px;
+        height: auto;
+        filter: grayscale(95%);
+        -webkit-filter: grayscale(95%);
+        margin: 0 auto;
+}
+    
+    p{
+        margin-top: 10px;
+        font-size: 75%;
+        text-align: center;
+    }
+}
+
+.cv-techs-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.soft-skill-container{
+    font-size: 75%;
+}
+
+.soft-skill{
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid $accent-colour;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.soft-skill:last-of-type{
+    margin-right: 0px;
+}
+
+/* ----- Education ----- */
+.cv-study{
+    div{
+        display: flex;
+    }
+}
+
+.cv-year{
+    color: $primary-colour;
+    font-weight: 700;
+    width: 150px;
+}
+
+.cv-description{
+    font-size: 95%;
+}
+
+.cv-extra{
+    color: $secondary-text;
+}
 
 /* ------------------------------------------------------- */
 /* ------------------------ FOOTER ----------------------- */

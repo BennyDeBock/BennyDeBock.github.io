@@ -104,7 +104,7 @@ hr { width: 70%; border-bottom: 2px solid #3e4245; margin-left: 15%; margin-bott
 
 .project-title { grid-column-start: 1; grid-column-end: 3; grid-row-start: 1; grid-row-end: 1; margin-bottom: 35px; }
 
-.project { width: 100%; min-height: 325px; height: 325px; overflow: hidden; background-color: #202224; display: flex; }
+.project { width: 100%; height: 325px; overflow: hidden; background-color: #202224; display: flex; }
 
 .project img { width: auto; height: 100%; }
 
@@ -130,6 +130,38 @@ hr { width: 70%; border-bottom: 2px solid #3e4245; margin-left: 15%; margin-bott
 .social-icon:hover { color: #9932CC; }
 
 /* ------------------------------------------------------- */
+/* -------------------------- CV ------------------------- */
+/* ------------------------------------------------------- */
+/* ----- BASICS ----- */
+.cv-title { margin-bottom: 15px; font-size: 130%; text-align: left; }
+
+.cv-subtitle { font-size: 100%; margin-bottom: 5px; }
+
+/* ----- SKILLS ----- */
+.cv-techs { display: flex; flex-direction: column; width: 100px; }
+
+.cv-techs img { width: 30px; height: auto; filter: grayscale(95%); -webkit-filter: grayscale(95%); margin: 0 auto; }
+
+.cv-techs p { margin-top: 10px; font-size: 75%; text-align: center; }
+
+.cv-techs-container { display: flex; margin-top: 20px; }
+
+.soft-skill-container { font-size: 75%; }
+
+.soft-skill { margin-right: 5px; padding: 5px; border: 1px solid #CC9F47; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; }
+
+.soft-skill:last-of-type { margin-right: 0px; }
+
+/* ----- Education ----- */
+.cv-study div { display: flex; }
+
+.cv-year { color: #9932CC; font-weight: 700; width: 150px; }
+
+.cv-description { font-size: 95%; }
+
+.cv-extra { color: #BFBFBF; }
+
+/* ------------------------------------------------------- */
 /* ------------------------ FOOTER ----------------------- */
 /* ------------------------------------------------------- */
 footer { position: fixed; bottom: 0; left: 50%; padding: 1rem; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
@@ -141,7 +173,5 @@ footer { position: fixed; bottom: 0; left: 50%; padding: 1rem; transform: transl
 
 /*Big phones to small tablets*/
 @media screen and (max-width: 768px) { .submit-btn { width: 100%; float: none; text-align: center; } }
-
-@media screen and (min-width: 1921px) { .row { transform: scale(1.15, 1.15); -webkit-transform: scale(1.15, 1.15); -moz-transform: scale(1.15, 1.15); -ms-transform: scale(1.15, 1.15); -o-transform: scale(1.15, 1.15); } }
 
 /*# sourceMappingURL=styles.css.map */
